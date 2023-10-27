@@ -1,0 +1,29 @@
+h1 {
+    color: rgb(235, 218, 26);
+    font-size: 5em;
+}
+body {
+    background-color: rgb(209, 7, 77);
+}
+
+#Main-Title {
+    background-color: purple;
+}
+
+#Table_Of_Edelgard {
+    background-color: gold;
+}
+
+#Three-Houses {
+    line-height: 1.5;
+}
+
+#cat {
+    font-family: "comic sans MS";
+    text-align: center;
+}
+
+.sub-title {
+    background-color: purple;
+    font-style: italic;
+}
