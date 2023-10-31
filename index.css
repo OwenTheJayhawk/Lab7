@@ -1,0 +1,14 @@
+body {
+    background-color: burlywood;
+    color: black;
+    font-family: Verdana;
+    font-size: 36pt;
+    background-image: url(https://owenthejayhawk.github.io./Lab7/Fieldhouse.jpg);
+    background-size: 100%;
+}
+
+user agent stylesheet
+body {
+    display: block;
+    margin: 8px;
+}
