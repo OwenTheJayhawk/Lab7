@@ -1,0 +1,14 @@
+body {
+    background-color: crimson;
+    color: royalblue;
+    font-family: Garamond;
+    font-size: 24pt;
+    
+    background-size: 100%;
+}
+
+user agent stylesheet
+body {
+    display: block;
+    margin: 8px;
+}
