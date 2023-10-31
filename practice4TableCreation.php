@@ -1,36 +1,45 @@
-<table border=1>
-    <tr>
-        <td></td>
-        <td>1</td>
-        <td>2</td>
-        <td>3</td>
-        <td>4</td>
-    </tr>
-    <tr>
-        <td>1</td>
-        <td>1</td>
-        <td>2</td>
-        <td>3</td>
-        <td>4</td>
-    </tr>
-    <tr>
-        <td>2</td>
-        <td>2</td>
-        <td>4</td>
-        <td>6</td>
-        <td>8</td>
-    </tr>
-    <tr>
-        <td>3</td>
-        <td>3</td>
-        <td>6</td>
-        <td>9</td>
-        <td>12</td>
-    </tr>
-    <tr>
-        <td>4</td>
-        <td>4</td>
-        <td>8</td>
-        <td>12</td>
-        <td>16</td>
-    </tr>
+
+<head>
+
+</head>
+<body>
+<link href="practice4.css" rel="stylesheet" type="text/css">
+    <h1>Multiplication Table</h1>
+
+    <form method="post" action="">
+        Enter a number: <input type="text" name="number">
+        <input type="submit" name="submit" value="Generate Table">
+    </form>
+
+    <?php
+    if (isset($_POST['submit'])) {
+        $number = $_POST['number'];
+
+
+        if (is_numeric($number) && $number > 0 && floor($number) == $number) {
+            echo "<h2>Multiplication Table for $number</h2>";
+            echo "<table border='1'>";
+            echo "<tr><th>&times;</th>";
+            
+            for ($i = 1; $i <= $number; $i++) {
+                echo "<th>$i</th>";
+            }
+            echo "</tr>";
+
+            for ($i = 1; $i <= $number; $i++) {
+                echo "<tr>";
+                echo "<th>$i</th>";
+                for ($j = 1; $j <= $number; $j++) {
+                    echo "<td>" . ($i * $j) . "</td>";
+                }
+                echo "</tr>";
+            }
+
+            echo "</table>";
+        } else {
+            echo "<p>Please enter a valid positive integer.</p>";
+        }
+    }
+    ?>
+
+</body>
