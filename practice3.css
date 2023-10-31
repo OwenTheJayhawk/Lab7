@@ -1,0 +1,14 @@
+body {
+    
+    color: black;
+    font-family: Georgia;
+    font-size: 24pt;
+    background-image: url(https://owenthejayhawk.github.io./Lab7/Legs.png);
+    background-size: 100%;
+}
+
+user agent stylesheet
+body {
+    display: block;
+    margin: 8px;
+}
